@@ -331,7 +331,7 @@ def main():
           }
         }
 
-        /* window.watchCSS = function(path) {
+        window.watchCSS = function(path) {
           if (window.BeautifulDiscord.isDirectory(path)) {
             files = window.BeautifulDiscord.readDir(path);
             dirname = path;
@@ -347,7 +347,7 @@ def main():
             }
           }
 
-          if(window._fileWatcher === null) {
+          /*if(window._fileWatcher === null) {
             window._fileWatcher = window.BeautifulDiscord.watcher(path,
               function(eventType, filename) {
                 if (!filename.endsWith(".css")) return;
@@ -359,17 +359,17 @@ def main():
                 }
               }
             );
-          }
-        }; */
+          }*/
+        };
 
-        /* window.tearDownCSS = function() {
+        window.tearDownCSS = function() {
           for (var key in window._styleTag) {
             if (window._styleTag.hasOwnProperty(key)) {
               window.clearCSS(key)
             }
           }
-          if(window._fileWatcher !== null) { window._fileWatcher.close(); window._fileWatcher = null; }
-        }; */
+          // if(window._fileWatcher !== null) { window._fileWatcher.close(); window._fileWatcher = null; }
+        };
 
         window.removeDuplicateCSS = function(){
         	const styles = [...document.getElementsByTagName("style")];
