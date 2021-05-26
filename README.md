@@ -1,21 +1,14 @@
 BeautifulDiscord
 ================
 
-Simple Python script that adds CSS hot-reload to Discord.
+[BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord) but without hot-reloading
+because maybe that's what's causing this bug...?
 
-![demo gif](http://i.imgur.com/xq4HS5f.gif)
+## Installing
 
-## Motivation
-
-I wanted custom CSS injection for Discord, with no JavaScript add-ons or anything.
-That's BeautifulDiscord.
-
-If you want JS, you can either:
-- Use [BetterDiscord](https://github.com/Jiiks/BetterDiscordApp)
-- Make your own thing!
-
-You could also fork this repo and add it, it's not that big of a stretch.
-I just didn't add it because it's not what I want to do here.
+```
+python3 -m pip install -U -e git+ssh://git@github.com/atrnh/BeautifulDiscord.git@main#egg=BeautifulDiscord
+```
 
 ## Usage
 
@@ -67,21 +60,3 @@ $
 You can also run it as a package - i.e. `python3 -m beautifuldiscord` - if somehow you cannot
 install it as a script that you can run from anywhere.
 
-## Installing
-
-```
-python3 -m pip install -U https://github.com/leovoel/BeautifulDiscord/archive/master.zip
-```
-
-Usage of a virtual environment is recommended, to not pollute your global package space.
-
-## Requirements
-
-- Python 3.x (no interest in compatibility with 2.x, untested on Python 3.x versions below 3.4)
-- `psutil` library: https://github.com/giampaolo/psutil
-
-Normally, `pip` should install any required dependencies.
-
-## More GIFs
-
-![demo gif](http://i.imgur.com/w0bQOJ6.gif)
